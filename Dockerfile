@@ -14,7 +14,7 @@ LABEL Maintainer="Varr Willis <semanticeffect@gmail.com>" \
       org.label-schema.schema-version="1.0.0"
 
 RUN apk update \
-    && apk add  --no-cache git mysql-client curl openssh-client icu libpng libjpeg-turbo libmcrypt libmcrypt-dev \
+    && apk add  --no-cache git mysql-client curl openssh-client icu libpng libjpeg-turbo libmcrypt libmcrypt-dev nano \
     && apk add --no-cache --virtual build-dependencies icu-dev \
     libxml2-dev freetype-dev libpng-dev libjpeg-turbo-dev g++ make autoconf \
     && docker-php-source extract \
